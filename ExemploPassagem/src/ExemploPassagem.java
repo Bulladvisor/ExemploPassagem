@@ -15,10 +15,13 @@ public class ExemploPassagem {
 		espacotrees();
 		
 		System.out.println("Terceira linha");
+<<<<<<< HEAD
 		System.out.print("Percentagem da hora que já correu :");
 		int minuto;
 		minuto=35;
 		System.out.println(minuto*100/60);
+=======
+>>>>>>> branch 'master' of https://github.com/Bulladvisor/ExemploPassagem.git
 	}
 
 	private static void espacotrees() {
