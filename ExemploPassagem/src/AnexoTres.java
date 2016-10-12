@@ -3,7 +3,10 @@ import java.util.Scanner;
 public class AnexoTres {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+   /*
+    * inputs por exemplo 4  - 3,14 e três nomes jorge silva matos
+    */
 		
 		        Scanner scan = new Scanner(System.in);
 		        
@@ -13,15 +16,19 @@ public class AnexoTres {
 		        
 		        double d = scan.nextDouble();
 		        
-                String s = new StringBuilder(scan.next()).toString();
-                
-                
-                
+		  
+				scan.nextLine();
 		        
-		        
+                String s = scan.nextLine();
+                
 		        
 		
-		        //Atenção que não aparece a string toda 
+		        /*
+		         * O problema deste exercicio, é que o texto
+		         * não aparecia todo, porque tinha de limpar o buffer
+		         * para isso acontecer, teve-se de criar a linha
+		         * scan.nextLine();
+		         */
 		        
                 
 

@@ -142,6 +142,9 @@ public class AulaStringOperacoes {
 		
 		String elc =e.substring(13, 20);
 		System.out.println(elc); //campeão
+		//atenção a contar de 0 a 13 temos campeão o 13 é o 'c' e o 'o'  
+		//é o 19 caracter +1 = 20
+		// não percebi porquê +1
 		
 		//Concatenar
 		el = e.concat(" de 2016");
@@ -474,11 +477,15 @@ public class AulaStringOperacoes {
 		 * para chamar essa variável $1 no exemplo a seguir tem mais variáveis
 		 */
 		
-		String identificar2 = "(www.bulladvisor.com)(\\w{2,})-(\\d{4}).html";
-		String subfinal = url1.replaceAll(identificar2,"http://$1/$3/$2.jsp");
-		System.out.println(subfinal);  //http://www.bulladvisor.com/2011/clientes.jsp
+		String identificar2 = "(www.bulladvisor.com)/(\\w{2,})-(\\d{4}).html";
+		String identfinal = url1.replaceAll(identificar2,"http://$1/$3/$2.jsp");
+		System.out.println(identfinal);  //http://www.bulladvisor.com/2011/clientes.jsp
+        //não esta a funcionar...
 		
 		
+		
+
+	}
 	}
 
-}
+
